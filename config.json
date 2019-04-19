@@ -23,9 +23,22 @@
 	
 	"project-settings": [
 		{
-			"key": "timeout-message",
-			"name": "Survey Time Out Message",
-			"type": "rich-text-area"
+			"key": "surveys",
+			"name": "Surveys/Messages",
+			"type": "sub_settings",
+			"repeatable": true,
+			"sub_settings": [
+				{
+					"key": "survey-name",
+					"name": "Survey Instrument Name",
+					"type": "form-list"
+				},
+				{
+					"key": "timeout-message",
+					"name": "Survey Time Out Message",
+					"type": "rich-text-area"
+				}
+			]
 		}
    	]
 }
